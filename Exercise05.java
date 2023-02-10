@@ -1,27 +1,26 @@
-package exercise.org;
+package method.org;
 
 import java.util.Scanner;
 
 public class Exercise05 {
 	public static void main(String[] args) {
-		Scanner s= new Scanner(System.in);
-		System.out.println("Enter i/p 1");
+		Scanner s =new Scanner(System.in);
+		System.out.println("Enter the su value");
+		int su=s.nextInt();
+		System.out.println("Enter the a value");
 		int a=s.nextInt();
-		System.out.println("Enter i/p 2");
-		int b=s.nextInt();
-		System.out.println("Enter i/p 3");
-		int c=s.nextInt();
-		System.out.println("Enter i/p 4");
-		int d=s.nextInt();
-		System.out.println("Enter i/p 5");
-		int e=s.nextInt();
+		System.out.println("The area of pentagon is "+areaOfPentagon(su, a));
 		
-		int sum=a+b+c+d+e;
-		int avg=sum/5;
-		System.out.println(sum);
-		System.out.println(avg);
 		s.close();
 		
 	}
+	public static double areaOfPentagon(int s,int a) {
+		
+		
+		return (5.0/2.0*s*a);
+		
+
+	}
+	
 
 }

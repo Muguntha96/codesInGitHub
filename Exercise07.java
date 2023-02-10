@@ -1,12 +1,32 @@
-package exercise.org;
+package method.org;
 
+import java.util.Scanner;
 
 public class Exercise07 {
+	public static boolean leapYear(int year) {
+		if (year%4==0) {
+			return true;
+		} else {
+			return false;
+
+		}
+	}
 	public static void main(String[] args) {
-		System.out.println("JAVA version : "+System.getProperty("java.version"));
-		System.out.println("java url :" +System.getProperty("java.vendor.url"));
-		System.out.println("java path : "+System.getProperty("java.class.path"));
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the num value");
+		int year=s.nextInt();
 		
+		leapYear(year);
+		
+		if (leapYear(year)) {
+			System.out.println("The given year is leap year");
+			
+		} else {
+			System.out.println("The give year is not leap year");
+		}
+	
+	
+	s.close();
 	}
 
 }

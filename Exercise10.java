@@ -1,26 +1,23 @@
-package exercise.org;
+package method.org;
+
+
 
 public class Exercise10 {
 	public static void main(String[] args) {
-		int a=20;
-		int sum=0;
-		int j=0;
-		for (int i = 1; i <=a; i++) {
-			if (i%2==0) {
-				sum=sum +i;
-				if (sum>0) {
-					j++;
-					
-				}
-				System.out.println(i);
+		String str="India is my country all indians are brothers and sisters";
+		System.out.println(str);
+		int count=0;
+		int i=0;
+		int len=str.length();
+		for (int j = 0; j < len; j++) {
+			if (str.charAt(i)==' '&& Character.isLetter(str.charAt(i+1))&&(i>0)) {
+				count++;
 			}
 			
-			
-			
+		}
+		count++;
+		System.out.println("There are totaly "+count + " words.");
 		}
 		
-		System.out.println("count of even : " +j);
-		 System.out.println("sum of even : "+sum);
 	}
 
-}
