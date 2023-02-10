@@ -1,2 +1,2 @@
 # codesInGitHub
-This repository is for practice
+This repository is for practicing java
