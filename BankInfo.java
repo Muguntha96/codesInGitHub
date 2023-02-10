@@ -2,6 +2,7 @@ package org.bank;
 
 public class BankInfo extends AxisBank {
 	public void saving() {
+		system.out.println("Axis Bank Savings");
 		System.out.println("Savings:8%");
 
 	}
