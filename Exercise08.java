@@ -1,19 +1,27 @@
-package array.org;
+package exercise.org;
 
 public class Exercise08 {
 	public static void main(String[] args) {
-		int[]a= {1,2,3,4,5};
-		int[]b= {2,3,6,7,4};
-	System.out.println("the common values of both the array is :");
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < b.length; j++) {
-				if (a[i]==b[j]) {
-					System.out.print(b[j]+" ");
-				}
-				
-			}
-			
-		}
+		int n=12344;
+		
+		System.out.println("sum of digits is :"+ sum(n));
 	}
+		
+public static  int sum(int n) {
+	int sum=0;
+	while(n!=0) {
+		sum= sum + n%10;
+		n=n/10;
+		
+		
+		
+		
+	}
+	return sum;
 
 }
+	}
+		
+	
+	
+

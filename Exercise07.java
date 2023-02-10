@@ -1,16 +1,12 @@
-package array.org;
+package exercise.org;
+
 
 public class Exercise07 {
-public static void main(String[] args) {
-	int[] a= {1,3,4,2,5};
-	int j=a.length-1;
-	int i = 0;
-	int[]b=new int[a.length];
-	for ( i = 0; i < b.length; i++) {
-		b[i]=a[j];
-		j--;
-		System.out.print(b[i]+" ");
+	public static void main(String[] args) {
+		System.out.println("JAVA version : "+System.getProperty("java.version"));
+		System.out.println("java url :" +System.getProperty("java.vendor.url"));
+		System.out.println("java path : "+System.getProperty("java.class.path"));
+		
 	}
-	
-}
+
 }

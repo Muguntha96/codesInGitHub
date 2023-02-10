@@ -1,24 +1,27 @@
-package array.org;
+package exercise.org;
+
+import java.util.Scanner;
 
 public class Exercise05 {
 	public static void main(String[] args) {
-		int[] a= {1,2,4,5,7};
-		int max=0;
-		int min=a[0];
-		for (int i = 0; i < a.length; i++) {
-			if (a[i]>max) {
-				max=a[i];
-			}
-		}
-		System.out.println("max value of array is : "+max);
-		for (int i = 1; i < a.length; i++) {
-			if (a[i]<min) {
-				min=a[i];
-			}
-		}
-		System.out.println("min value of array is : "+min);
-	}
-	
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter i/p 1");
+		int a=s.nextInt();
+		System.out.println("Enter i/p 2");
+		int b=s.nextInt();
+		System.out.println("Enter i/p 3");
+		int c=s.nextInt();
+		System.out.println("Enter i/p 4");
+		int d=s.nextInt();
+		System.out.println("Enter i/p 5");
+		int e=s.nextInt();
+		
+		int sum=a+b+c+d+e;
+		int avg=sum/5;
+		System.out.println(sum);
+		System.out.println(avg);
+		s.close();
+		
 	}
 
-
+}

@@ -1,21 +1,17 @@
-package array.org;
+package exercise.org;
 
 public class Exercise11 {
 	public static void main(String[] args) {
-		int[]a= {1,2,3,4};
-		int[]b= {1,3,4,8};
-		int[]c=new int[a.length];
-		System.out.println("Sum of a & b array is: ");
-		for (int i = 0; i < c.length; i++) {
+		int a=100;
+		int j=0;
+		for (int i =1; i <=a; i++) {
+			for (int j = i; j >=1; j--) {
+				
+			}
 			
-			c[i]=a[i]+b[i];
-			System.out.print(c[i]+" ");
 			
 		}
-	
-	
-	
-	
+		System.out.println(sum);
 	}
 
 }
